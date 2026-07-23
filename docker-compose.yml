@@ -9,7 +9,7 @@ services:
 
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ${PWD}/init/postgres/:/docker-entrypoint-initdb.d:ro
+      - ${PWD}/init/postgres:/docker-entrypoint-initdb.d:ro
 
 
     healthcheck:
