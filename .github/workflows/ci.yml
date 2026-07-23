@@ -19,5 +19,7 @@ jobs:
       - name: build and push image
         uses: docker/build-push-action@v6
         with:
+          context: ./frontend
+          file: ./frontend/Dockerfile
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-frontend:latest
