@@ -1,4 +1,4 @@
-name: CI
+name: BACKEND_CI
 
 on:
   workflow_dispatch:
