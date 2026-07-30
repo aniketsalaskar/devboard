@@ -33,7 +33,7 @@ export function DashboardPage() {
               workspace overview
             </span>
           </div>
-          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you, Shubham.</h1>
+          <h1 className="text-[30px] font-semibold leading-none tracking-[-0.6px]">Good to see you.</h1>
           <p className="text-[14px] text-ink-600 dark:text-ink-400 mt-2">
             Here's where your work stands today.
           </p>
@@ -106,7 +106,7 @@ function ChipStat({ label, value, icon: Icon, tone }) {
     danger:  { bg: 'bg-danger-bg',  fg: 'text-[#A32D2D]' },
     neutral: { bg: 'bg-ink-50 dark:bg-white/10', fg: 'text-ink-600 dark:text-ink-400' },
   };
-  const t = tones[tone] || tones.neutral;
+  const t = tones[tone] || tones.neutral;	
   return (
     <div className="db-card rounded-lg p-3 flex flex-col gap-2">
       <div className="flex items-center justify-between">
